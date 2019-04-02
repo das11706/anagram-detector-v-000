@@ -7,17 +7,12 @@ class Anagram
 
   def match(anagrams)
     anagrams.select do |w|
-      w.split("").sort
+      if w.split("").sort == word.split("").sort
+        anagrams
+      end
+    end
   end
-  anagrams
-end
 
 end
 
-# def match(anagrams)
-#   anagrams.select do |w|
-#     if w.split("").sort == word.split("").sort
-#       anagrams
-#     end
-#   end
-# end
+
