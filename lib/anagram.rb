@@ -9,7 +9,7 @@ class Anagram
     anagrams.select do |w|
        !!w.split("").sort == !!word.split("").sort
         anagrams
-      end
+
     end
   end
 
