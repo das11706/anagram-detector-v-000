@@ -7,8 +7,9 @@ class Anagram
 
   def match(anagrams)
     anagrams.select do |w|
-      w.split("").sort 
+      w.split("").sort
   end
+end
 
 end
 
